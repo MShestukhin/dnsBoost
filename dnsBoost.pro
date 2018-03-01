@@ -8,15 +8,15 @@ CONFIG += console
 CONFIG -= app_bundle
 
 TEMPLATE = app
-win32-g++ {
-    INCLUDEPATH += C:/boost_1_66_0/boost_1_66_0/boost_mingw_530/include/boost-1_66/
-    LIBS += "-LC:/boost_1_66_0/boost_1_66_0/boost_mingw_530/lib" \
-    -llibboost_system-mgw63-mt-x32-1_66
-LIBS += -lsetupapi
-LIBS += -lwsock32
-LIBS += -lws2_32
-DEFINES += _WIN32_WINNT=0x0501
-}
+#win32-g++ {
+#    INCLUDEPATH += C:/boost_1_66_0/boost_1_66_0/boost_mingw_530/include/boost-1_66/
+#    LIBS += "-LC:/boost_1_66_0/boost_1_66_0/boost_mingw_530/lib" \
+#    -llibboost_system-mgw63-mt-x32-1_66
+#LIBS += -lsetupapi
+#LIBS += -lwsock32
+#LIBS += -lws2_32
+#DEFINES += _WIN32_WINNT=0x0501
+#}
 SOURCES += \
     dnsclient.cpp \
     main.cpp
