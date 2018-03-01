@@ -17,7 +17,9 @@ LIBS += -lwsock32
 LIBS += -lws2_32
 DEFINES += _WIN32_WINNT=0x0501
 }
-SOURCES += main.cpp
+SOURCES += \
+    dnsclient.cpp \
+    main.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -30,5 +32,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-HEADERS +=
+HEADERS += \
+    dnsclient.h
 
